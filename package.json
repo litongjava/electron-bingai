@@ -1,6 +1,6 @@
 {
-  "name": "electron-openai-chatgpt",
-  "productName": "electron-openai-chatgpt",
+  "name": "electron-bingai",
+  "productName": "electron-bingai",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",
@@ -32,8 +32,8 @@
     "electron-builder": "^24.4.0"
   },
   "build": {
-    "productName": "electron-openai-chatgpt-work",
-    "appId": "com.litongjava.openai.chatgpt.work",
+    "productName": "electron-bingai",
+    "appId": "com.litongjava.microsote.bingai",
     "directories": {
       "output": "dist"
     },
