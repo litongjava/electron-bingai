@@ -25,12 +25,14 @@ jobs:
         run: yarn install  # 或 npm install
 
       - name: Build the Electron app
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npx electron-builder
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v3
         with:
-          name: dist
+          name: dist-win
           path: dist
 
 #  build_windows:

@@ -33,7 +33,7 @@
   },
   "build": {
     "productName": "electron-bingai",
-    "appId": "com.litongjava.microsote.bingai",
+    "appId": "com.litongjava.microsoft.bingai",
     "directories": {
       "output": "dist"
     },
