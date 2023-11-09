@@ -20,7 +20,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
-      - run: npx electron-builder
+
+      - name: Install dependencies
+        run: yarn install  # 或 npm install
+
+      - name: Build the Electron app
+        run: npx electron-builder
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v3
