@@ -63,7 +63,7 @@ jobs:
         with:
           name: dist-windows-x64
           path: |
-            dist/electron-bingai*
+            dist/electron-bingai*.exe
             !dist/*.blockmap
 
   build_macos:
@@ -93,7 +93,7 @@ jobs:
         with:
           name: dist-macos-x64
           path: |
-            dist/electron-bingai*
+            dist/electron-bingai*.dmg
             !dist/*.blockmap
 
   build_macos_m2:
@@ -123,7 +123,7 @@ jobs:
         with:
           name: dist-macos-arm64
           path: |
-            dist/electron-bingai*
+            dist/electron-bingai*.dmg
             !dist/*.blockmap
 
 
