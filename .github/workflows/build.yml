@@ -31,8 +31,10 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-artifact@v3
         with:
-          name: dist-ubuntu
-          path: dist
+          name: dist-ubuntu-x64
+          path: |
+            dist/electron-bingai*
+            !dist/*.blockmap
 
   build_windows:
     runs-on: windows-latest
@@ -59,8 +61,10 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-artifact@v3
         with:
-          name: dist-windows
-          path: dist
+          name: dist-windows-x64
+          path: |
+            dist/electron-bingai*
+            !dist/*.blockmap
 
   build_macos:
     runs-on: macos-latest
@@ -87,8 +91,10 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-artifact@v3
         with:
-          name: dist-macos
-          path: dist
+          name: dist-macos-x64
+          path: |
+            dist/electron-bingai*
+            !dist/*.blockmap
 
   build_macos_m2:
     runs-on: macos-latest
@@ -116,7 +122,9 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: dist-macos-arm64
-          path: dist
+          path: |
+            dist/electron-bingai*
+            !dist/*.blockmap
 
 
 
